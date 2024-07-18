@@ -96,7 +96,7 @@ struct HomeView: View {
                 manager.fetchHealthData()
             }
         }
-        .background(Color.clear) // Ensure the background is clear
+        .background(Color.clear)
     }
     
     func formattedValue(_ value: Double, decimalPlaces: Int) -> String {

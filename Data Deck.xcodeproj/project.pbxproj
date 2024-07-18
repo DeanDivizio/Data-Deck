@@ -14,6 +14,11 @@
 		00B2278F2C494BED006B6099 /* Data_DeckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2278E2C494BED006B6099 /* Data_DeckTests.swift */; };
 		00B227992C494BED006B6099 /* Data_DeckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B227982C494BED006B6099 /* Data_DeckUITests.swift */; };
 		00B2279B2C494BED006B6099 /* Data_DeckUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B2279A2C494BED006B6099 /* Data_DeckUITestsLaunchTests.swift */; };
+		00B227A92C495EFB006B6099 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B227A82C495EFB006B6099 /* HomeView.swift */; };
+		00B227AB2C496008006B6099 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B227AA2C496008006B6099 /* TabView.swift */; };
+		00B227AD2C496137006B6099 /* ConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B227AC2C496137006B6099 /* ConfigView.swift */; };
+		00B227AF2C4964CC006B6099 /* DataCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B227AE2C4964CC006B6099 /* DataCard.swift */; };
+		00B227B12C496DF0006B6099 /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B227B02C496DF0006B6099 /* HealthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,13 @@
 		00B227942C494BED006B6099 /* Data DeckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Data DeckUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B227982C494BED006B6099 /* Data_DeckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_DeckUITests.swift; sourceTree = "<group>"; };
 		00B2279A2C494BED006B6099 /* Data_DeckUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_DeckUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00B227A72C494C9E006B6099 /* Data Deck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Data Deck.entitlements"; sourceTree = "<group>"; };
+		00B227A82C495EFB006B6099 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00B227AA2C496008006B6099 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		00B227AC2C496137006B6099 /* ConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigView.swift; sourceTree = "<group>"; };
+		00B227AE2C4964CC006B6099 /* DataCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCard.swift; sourceTree = "<group>"; };
+		00B227B02C496DF0006B6099 /* HealthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		00B227B22C4974AB006B6099 /* Data-Deck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Data-Deck-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,17 @@
 		00B2277C2C494BEC006B6099 /* Data Deck */ = {
 			isa = PBXGroup;
 			children = (
+				00B227B22C4974AB006B6099 /* Data-Deck-Info.plist */,
+				00B227AA2C496008006B6099 /* TabView.swift */,
+				00B227A82C495EFB006B6099 /* HomeView.swift */,
+				00B227A72C494C9E006B6099 /* Data Deck.entitlements */,
 				00B2277D2C494BEC006B6099 /* Data_DeckApp.swift */,
 				00B2277F2C494BEC006B6099 /* ContentView.swift */,
 				00B227812C494BED006B6099 /* Assets.xcassets */,
 				00B227832C494BED006B6099 /* Preview Content */,
+				00B227AC2C496137006B6099 /* ConfigView.swift */,
+				00B227AE2C4964CC006B6099 /* DataCard.swift */,
+				00B227B02C496DF0006B6099 /* HealthManager.swift */,
 			);
 			path = "Data Deck";
 			sourceTree = "<group>";
@@ -257,8 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B227A92C495EFB006B6099 /* HomeView.swift in Sources */,
+				00B227AD2C496137006B6099 /* ConfigView.swift in Sources */,
 				00B227802C494BEC006B6099 /* ContentView.swift in Sources */,
+				00B227AF2C4964CC006B6099 /* DataCard.swift in Sources */,
+				00B227AB2C496008006B6099 /* TabView.swift in Sources */,
 				00B2277E2C494BEC006B6099 /* Data_DeckApp.swift in Sources */,
+				00B227B12C496DF0006B6099 /* HealthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,12 +443,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Data Deck/Data Deck.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Data Deck/Preview Content\"";
 				DEVELOPMENT_TEAM = AQYUR75B66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Data-Deck-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow read access to display your health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -437,6 +465,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DeanDivizio.Data-Deck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,12 +477,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Data Deck/Data Deck.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Data Deck/Preview Content\"";
 				DEVELOPMENT_TEAM = AQYUR75B66;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Data-Deck-Info.plist";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow read access to display your health data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,6 +499,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "DeanDivizio.Data-Deck";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -14,6 +14,12 @@ struct Data_DeckApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(manager) // Pass the HealthManager instance to the environment
+                .background(
+                            LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.8), Color.green.opacity(0.8)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                                .edgesIgnoringSafeArea(.all) // Ensure the background covers the entire view
+                        )
         }
     }
 }
+
